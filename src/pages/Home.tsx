@@ -1,9 +1,16 @@
 import React from 'react'
+import '../style/Home.scss'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 
-const Home : React.FC<any> = (props) => {
+const Home: React.FC<any> = (props) => {
   return (
-    <div>
-      <img src="image/home.jpg" width="100 vw" />
+    <div className='home'>
+      <img src='image/home.jpg' className='Homeimage' alt='' />
+      <div className='foothead'>
+        <Header />
+        <Footer />
+      </div>
     </div>
   )
 }

@@ -1,0 +1,32 @@
+@import 'global.scss';
+
+.footer {
+  height: $FooterHeight;
+  .menu {
+    height: 75%;
+    background-color: rgba(255, 255, 255, $FooterOpacity);
+    border-radius: $FooterBorderRadius;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content {
+      margin: 0 15px;
+      display: flex;
+      .iconBox {
+        width: $IconBoxWidth;
+        height: $IconBoxHeight;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icon {
+          font-size: $FooterIconSize;
+          margin: 0 10px;
+          transition: font-size $PositionTime;
+          &:hover {
+            font-size: $FooterIconHoverSize;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "global.scss";
+.header {
+  height:$HeaderHeight;
+  width: 100%;
+  background-color: $BackgoundColor;
+  opacity: $Opacity;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  .apple {
+    font-size: $IconFontSize;
+    margin-left: $IconMargin;
+  }
+  .right {
+    display: flex;
+    .icon {
+      font-size: $IconFontSize;
+      margin-right: $IconMargin;
+    }
+    .time {
+      font-size: $TextFontSize;
+      margin-right: $IconMargin;
+    }
+  }
+}

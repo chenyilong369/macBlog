@@ -1,0 +1,30 @@
+{
+  "id": "2427367",
+  "name": "mac",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "318410",
+      "name": "apple",
+      "font_class": "apple",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "553900",
+      "name": "文档",
+      "font_class": "iconset0118",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "9307591",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    }
+  ]
+}
