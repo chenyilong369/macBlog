@@ -4,7 +4,8 @@
   height: $FooterHeight;
   .menu {
     height: 90%;
-    background-color: rgba(255, 255, 255, $FooterOpacity);
+    color: #fff;
+    background-color: rgba(0, 0, 0, $FooterOpacity);
     border-radius: $FooterBorderRadius;
     display: flex;
     align-items: center;
