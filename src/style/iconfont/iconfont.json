@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "19702973",
+      "name": "markdown文件",
+      "font_class": "file-markdown",
+      "unicode": "ebb1",
+      "unicode_decimal": 60337
+    },
+    {
       "icon_id": "339044",
       "name": "菜单",
       "font_class": "caidan",

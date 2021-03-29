@@ -1,9 +1,8 @@
-@import "global.scss";
+@import 'global.scss';
 
 .content {
-  margin: 1% 0;
   width: 100%;
-  height: 100%;
+  margin: 5px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,6 +11,8 @@
     width: 80%;
     height: 100%;
     background-color: $BackgoundColor;
+    display: flex;
+    flex-direction: column;
 
     .header {
       background-color: rgb(80, 75, 75);
@@ -29,7 +30,7 @@
         }
 
         .yellow {
-          background-color: #FF9912;
+          background-color: #ff9912;
         }
 
         .red {
@@ -37,11 +38,11 @@
         }
 
         .green {
-          background-color: #00C957;
+          background-color: #00c957;
         }
 
         .returnOrGo {
-          margin-left: 40px;
+          margin-left: 50px;
           display: flex;
           align-items: center;
 
@@ -75,11 +76,14 @@
           background-color: rgb(124, 121, 121);
           font-size: 14px;
         }
+
         .under {
           display: flex;
           align-items: center;
+
           .underRight {
             margin-right: 1px;
+
             .icon {
               width: 0;
               height: 0;
@@ -89,6 +93,84 @@
             }
           }
         }
+      }
+    }
+
+    .main {
+      flex: 1;
+      display: flex;
+
+      .sidebar {
+        width: 175px;
+        height: auto;
+        background-color: rgb(80, 75, 75);
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid rgb(54, 54, 54);
+        border-right: 1px solid rgb(53, 53, 53);
+
+        .sidebarItem {
+          margin: 10px 0px 0px 20px;
+          font-size: 14px;
+          color: rgb(221, 221, 221);
+          display: flex;
+          align-items: center;
+
+          .leftIcon {
+            margin-right: 7px;
+          }
+        }
+      }
+
+      .wrapper {
+        width: 100%;
+        overflow: hidden;
+
+        .contentMain {
+          max-height: calc(100vh - 27px - 10px - 35px - 60px);
+          overflow-y: scroll;
+          &:-webkit-scrollbar {
+            display: none;
+          }
+
+          .pages {
+            display: flex;
+            width: 100%;
+            color: rgb(221, 221, 221);
+            min-height: calc(100vh - 27px - 10px - 35px - 60px);
+            flex-wrap: wrap;
+            align-content:flex-start;
+            .pageborder {
+              width: 20%;
+              height: 150px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+
+              .iconSize {
+                font-size: 100px;
+                z-index: 1;
+              }
+
+              .fileName {
+                margin-top: -8px;
+                font-size: 14px;
+                z-index: 100;
+              }
+            }
+          }
+        }
+      }
+
+      .article {
+        position: absolute;
+        top:0;
+        left:0;
+        background-color: #fff;
+        width:100vw;
+        height:100vh;
+        z-index: 1000;
       }
     }
   }

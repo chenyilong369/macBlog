@@ -14,14 +14,15 @@
   }
   .right {
     display: flex;
+    align-items: center;
     .icon {
       font-size: $IconFontSize;
-      margin-right: $IconMargin;
+      margin-left: $IconMargin;
     }
     .time {
-      width: 100px;
+      min-width: 85px;
+      text-align: center;
       font-size: $TextFontSize;
-      margin-right: $IconMargin;
     }
   }
 }
